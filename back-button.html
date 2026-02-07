@@ -1,0 +1,11 @@
+
+<button
+  hx-get="/pricing.html"
+  hx-target="#content"
+  hx-swap="innerHTML"
+  hx-on:click="document.getElementById('header-nav').innerHTML = ''"
+  class="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200 bg-slate-700/50 hover:bg-slate-700 px-4 py-2 rounded-md"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+  <span>Change Plan</span>
+</button>

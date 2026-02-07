@@ -1,0 +1,5 @@
+{
+  "name": "Cloud Cost Anomaly Detector",
+  "description": "An intelligent application that analyzes your cloud cost reports to identify anomalies, provide insightful visualizations, and generate narrative explanations for potential savings. Features tiered plans with PayPal integration.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,41 @@
+
+<div class="space-y-8">
+  <div hx-get="/back-button.html" hx-trigger="load" hx-target="#header-nav" hx-swap="innerHTML"></div>
+
+  <div class="p-6 bg-slate-800/50 border border-slate-700 rounded-lg space-y-4">
+    <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+      <h2 class="text-3xl font-bold text-white">Analysis Dashboard</h2>
+      <div class="grid grid-cols-3 gap-1 rounded-lg bg-slate-800 p-1 w-full sm:w-auto">
+        <button id="tier-btn-Developer" onclick="window.selectTier('Developer')" class="tier-btn px-4 py-2 text-sm font-semibold rounded-md transition-colors">Developer</button>
+        <button id="tier-btn-Business" onclick="window.selectTier('Business')" class="tier-btn px-4 py-2 text-sm font-semibold rounded-md transition-colors">Business</button>
+        <button id="tier-btn-Enterprise" onclick="window.selectTier('Enterprise')" class="tier-btn px-4 py-2 text-sm font-semibold rounded-md transition-colors">Enterprise</button>
+      </div>
+    </div>
+    <p class="text-slate-400">
+      Upload your CSV cost report to begin the analysis.
+    </p>
+  </div>
+
+
+  <div id="analysis-result">
+    <form id="upload-form" onsubmit="handleFileUpload(event)">
+      <div class="p-8 md:p-12 text-center border-2 border-dashed rounded-xl border-slate-700 bg-slate-800/50">
+          <input type="file" id="file-upload" name="file-upload" class="hidden" accept=".csv, text/csv">
+          <label for="file-upload" class="cursor-pointer flex flex-col items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-16 mb-4 text-slate-500"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m16 16-4-4-4 4"></path></svg>
+              <h3 class="text-xl font-bold text-white">Upload Your Cost Report</h3>
+              <p class="text-slate-400 mt-2">Drag & drop your CSV file here, or click to browse.</p>
+          </label>
+      </div>
+       <div class="text-center mt-4">
+          <button type="submit" class="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold py-3 px-6 rounded-lg transition-colors">Analyze Now</button>
+      </div>
+    </form>
+    
+    <div id="loader" class="hidden flex-col items-center justify-center text-center p-12 bg-slate-800/50 border border-slate-700 rounded-lg">
+      <div class="w-12 h-12 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
+      <p class="mt-4 text-lg font-semibold text-white">Analyzing report...</p>
+      <p class="text-slate-400">Our AI is crunching the numbers. This may take a moment.</p>
+    </div>
+  </div>
+</div>

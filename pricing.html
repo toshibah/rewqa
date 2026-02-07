@@ -1,0 +1,71 @@
+
+<div class="text-center">
+  <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
+    Find the Perfect Plan
+  </h2>
+  <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-12">
+    Unlock powerful cloud cost insights. Start with the plan that fits your needs and scale as you grow.
+  </p>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <!-- Developer Tier -->
+    <div class="border-slate-700 bg-slate-800/50 relative border rounded-xl p-8 flex flex-col h-full transition-all duration-300">
+      <h3 class="text-2xl font-bold text-indigo-400 text-center">Developer</h3>
+      <div class="text-center my-6"><span class="text-5xl font-extrabold text-indigo-400">$49</span><span class="text-slate-400">/mo</span></div>
+      <ul class="space-y-4 mb-8 flex-grow">
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Single Project Analysis</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Monthly Reports</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Anomaly Detection</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Email Support</span></li>
+      </ul>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="get" target="_blank" rel="noopener noreferrer" onsubmit="localStorage.setItem('selectedTier', 'Developer'); htmx.ajax('GET', '/dashboard.html', {target: '#content', swap: 'innerHTML'});">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_1">
+        <button type="submit"
+                class="w-full text-center font-bold py-3 rounded-lg transition-all duration-300 bg-indigo-600 text-white hover:bg-indigo-500">
+          Choose Plan
+        </button>
+      </form>
+    </div>
+    <!-- Business Tier -->
+    <div class="border-cyan-400 bg-slate-800 shadow-2xl shadow-cyan-500/10 relative border rounded-xl p-8 flex flex-col h-full transition-all duration-300">
+      <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"><span class="bg-cyan-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span></div>
+      <h3 class="text-2xl font-bold text-cyan-400 text-center">Business</h3>
+      <div class="text-center my-6"><span class="text-5xl font-extrabold text-cyan-400">$99</span><span class="text-slate-400">/mo</span></div>
+      <ul class="space-y-4 mb-8 flex-grow">
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Up to 5 Projects</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Weekly Reports</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Advanced Anomaly Detection</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Root Cause Suggestions</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Priority Email Support</span></li>
+      </ul>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="get" target="_blank" rel="noopener noreferrer" onsubmit="localStorage.setItem('selectedTier', 'Business'); htmx.ajax('GET', '/dashboard.html', {target: '#content', swap: 'innerHTML'});">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_2">
+        <button type="submit"
+                class="w-full text-center font-bold py-3 rounded-lg transition-all duration-300 bg-cyan-400 text-slate-900 hover:bg-cyan-300 shadow-lg shadow-cyan-500/20">
+          Choose Plan
+        </button>
+      </form>
+    </div>
+    <!-- Enterprise Tier -->
+    <div class="border-slate-700 bg-slate-800/50 relative border rounded-xl p-8 flex flex-col h-full transition-all duration-300">
+      <h3 class="text-2xl font-bold text-amber-400 text-center">Enterprise</h3>
+      <div class="text-center my-6"><span class="text-5xl font-extrabold text-amber-400">$249</span><span class="text-slate-400">/mo</span></div>
+      <ul class="space-y-4 mb-8 flex-grow">
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Unlimited Projects</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Real-time Dashboards</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Predictive Cost Forecasting</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">Dedicated Analyst Support</span></li>
+        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-cyan-400 flex-shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span class="text-slate-300">API Access</span></li>
+      </ul>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="get" target="_blank" rel="noopener noreferrer" onsubmit="localStorage.setItem('selectedTier', 'Enterprise'); htmx.ajax('GET', '/dashboard.html', {target: '#content', swap: 'innerHTML'});">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_3">
+        <button type="submit"
+                class="w-full text-center font-bold py-3 rounded-lg transition-all duration-300 bg-amber-600 text-white hover:bg-amber-500">
+          Choose Plan
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
